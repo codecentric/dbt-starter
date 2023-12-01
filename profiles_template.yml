@@ -1,0 +1,15 @@
+analytics: # profile name
+  target: dwh_production # this is the default target
+  outputs:
+    dwh_production:
+      type: <postgres | other> # the database type make sure you installed the corresponding adapter https://docs.getdbt.com/docs/supported-data-platforms
+      host: [hostname]
+      user: [username]
+      password: [password]
+      port: [port]
+      dbname: [database name] # or database instead of dbname
+      schema: [dbt schema]
+
+    <target-name>: # additional targets
+
+<profile-name>: # additional profiles
